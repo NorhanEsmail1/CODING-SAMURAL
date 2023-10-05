@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./doList.css">
+    <title>List</title>
+</head>
+<body>
+
+    <div class="container mt-3  " id="contant">
+    <div class=" form-group " >
+        <div class="control" >
+        <h4 > To Do List </h4>
+        
+        <input class=" form-control  form-control-lg " id="input" placeholder="Enter Task" type="text" >
+        <div class="dropdown">
+            <button class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" id="dropdown" type="button" aria-haspopup="true" aria-expanded="false">Importance</button>
+            <button class="btn btn-primary btn-lg p-3" id="addTask" disabled>Add Task</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" id="button-list" data-value="Importance"> ... </a>
+              <a class="dropdown-item" id="button-list" data-value="High">High</a>
+              <a class="dropdown-item" id="button-list" data-value="Medium">Medium</a>
+              <a class="dropdown-item" id="button-list" data-value="low">low</a>
+            </div>
+          </div> 
+        <div id="tasks"></div>
+    </div>
+    </div>
+    <!-- Add a modal dialog container -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <input id="editInput" type="text" class="form-control form-control-lg">
+      <div class="button-container">
+        <button id="saveButton" class="btn btn-primary btn-sm">Save</button>
+        <button id="cancelButton" class="btn btn-primary btn-sm">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Rest of your HTML code -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="./doList.js"></script>
+</body>
+</html>

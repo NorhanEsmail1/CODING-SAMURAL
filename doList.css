@@ -1,0 +1,108 @@
+#input{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    height: 3em;
+    box-shadow:1px 1px 1px #03045e;
+
+}
+.task-name , .edit-input{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    height: 3em;
+    text-align: left;
+    font-size: 15px;
+    display: flex;
+    box-shadow:1px 1px 1px #03045e;
+   
+    
+
+}
+#list {
+   padding-top: 8px;
+    
+}
+.save,.cancel {
+  display: none;
+}
+h4{
+    display: inline;
+     font-size: 40px; 
+     font-weight: bold; 
+     padding-top: 3%; 
+     color:#023E8A;
+    text-shadow: 1px 1px 3px #023E8A;
+}
+/* CSS for the modal dialog */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+    text-align: right;
+  }
+.delete ,.cancel {
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateX(2px);
+}
+.ml-auto {
+    margin-left: auto;
+}
+.edit ,.save {
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateX(2px);
+}
+
+  
+#contant{
+    width: 50%;
+    height: 500%;
+    text-align: center; 
+    margin-top: 3%;
+ 
+} 
+
+body{
+    background-color: #FFE5EC;
+}
+#button-list{
+    display: block; 
+    margin-top: 3px;
+    color :#457b9d;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    text-shadow:0.5px 0px 0px white;
+
+}
+#button-list:hover{
+    background-color :#023e8a;
+    color:white ;
+    font-size: large;
+}
+#droplist{
+    text-align: center;
+    color: #03045e;
+    text-shadow:2px 2px 1px #FFE5EC;
+    cursor: pointer;
+ }
